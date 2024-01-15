@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/x-icon" href="./src/imgs/favicon.ico">
+
+    <title>Clima-Tact</title>
+
+    <link rel="stylesheet" href="./src/css/styles.css">
+
+</head>
+<body>
+    
+    <main class="conteudo">
+
+        <div class="busca">
+            <input type="text" id="input-busca" placeholder="Digite uma cidade">
+            <button id="btn-busca">
+                <img class="lupa" src="./src/imgs/magnifying-glass.svg" alt="Busca">
+            </button>
+        </div>
+
+        <div class="principal">
+            <h1 id="cidade">Pesquise o nome de uma cidade para ver como está o clima nela</h1>
+
+            <p id="temperatura"></p>
+
+            <img src="https://cdn.weatherapi.com/weather/64x64/day/116.png" id="icone-clima" alt="Clima">
+
+            <p id="tempo"></p>
+        </div>
+
+        <div class="secundaria">
+
+            <div class="umidade-container">
+                <span>Umidade</span>
+                <span id="umidade">-</span>
+            </div>
+
+            <div class="vento-container">
+                <span>Velocidade do Vento</span>
+                <span id="velocidade-vento">-</span>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="./src/js/index.js"></script>
+
+</body>
+</html>
