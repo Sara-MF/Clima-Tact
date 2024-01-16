@@ -1,6 +1,7 @@
 const keyApi = '61f5bc70276148a2822112832231312';
 
 const botaoBusca = document.querySelector("#btn-busca");
+const inputBusca = document.querySelector("#input-busca");
 
 botaoBusca.addEventListener("click", async () => {
 
@@ -56,3 +57,11 @@ function preencherDadosNaTela(dados, cidade) {
 
     document.getElementById("velocidade-vento").textContent = `${vento} Km/h`;
 }
+
+inputBusca.addEventListener("keydown", function(e) {
+
+    if (e.keyCode == 13) {  
+        botaoBusca.click();
+    }
+    
+});
